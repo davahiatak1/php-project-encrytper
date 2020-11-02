@@ -1,0 +1,1843 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.36" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">c:\program files\microsoft fxcop 1.36\Xml\FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-US" />
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+  <IgnoreGeneratedCode>False</IgnoreGeneratedCode>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/IlluminationTools.exe" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.36">
+  <Targets>
+   <Target Name="$(ProjectDir)/IlluminationTools.exe">
+    <Modules>
+     <Module Name="illuminationtools.exe">
+      <Messages>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2008-12-08 08:37:45Z">
+        <Issue Name="NoStrongName">
+         <Item>'IlluminationTools.exe'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Created="2008-12-08 08:37:45Z">
+        <Issue>
+         <Item>'IlluminationTools.exe'</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824" Created="2008-12-08 08:37:45Z">
+        <Issue>
+         <Item>'IlluminationTools.exe'</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="IlluminationTools">
+        <Types>
+         <Type Name="FrmIlluminationTools">
+          <Messages>
+           <Message Id="Frm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+            <Issue Name="Type">
+             <Item>Frm</Item>
+             <Item>'FrmIlluminationTools'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#aboutIlluminationToolsToolStripMenuItem_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.aboutIlluminationToolsToolStripMenuItem_Click(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#btnDecodePath_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.btnDecodePath_Click(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.btnDecodePath_Click(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#btnEncode_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.btnEncode_Click(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.btnEncode_Click(object, EventArgs)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'FrmIlluminationTools.btnEncode_Click(object, EventArgs)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'FrmIlluminationTools.btnEncode_Click(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#btnEncodePath_Click(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.btnEncodePath_Click(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.btnEncodePath_Click(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#folderBrowser1_SelChanged(System.Object,IlluminationTools.FolderBrowser.FolderSelChangedEventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.folderBrowser1_SelChanged(object, FolderSelChangedEventArgs)'</Item>
+               <Item>'object'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Pidl" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.folderBrowser1_SelChanged(object, FolderSelChangedEventArgs)'</Item>
+               <Item>'Pidl'</Item>
+               <Item>'string'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Created="2008-12-08 08:37:45Z">
+              <Issue Name="IsNullOrEmpty">
+               <Item>'string.Equals(string)'</Item>
+               <Item>'FrmIlluminationTools.folderBrowser1_SelChanged(object, FolderSelChangedEventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Form1_Load(System.Object,System.EventArgs)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.Form1_Load(object, EventArgs)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.Form1_Load(object, EventArgs)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#HasLicense()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'FrmIlluminationTools.HasLicense()'</Item>
+              </Issue>
+             </Message>
+             <Message Id="illuminationLicense" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'FrmIlluminationTools.HasLicense()'</Item>
+               <Item>'illuminationLicense'</Item>
+               <Item>'IlluminationLicense'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="IlluminationTools.Constants">
+        <Types>
+         <Type Name="IlluminationConstants">
+          <Messages>
+           <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Created="2008-12-08 08:37:45Z">
+            <Issue>
+             <Item>'IlluminationConstants'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#asciiDoubleTenTen">
+            <Messages>
+             <Message Id="ascii" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>ascii</Item>
+               <Item>'IlluminationConstants.asciiDoubleTenTen'</Item>
+               <Item>Ascii</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#asciiSingleTenTen">
+            <Messages>
+             <Message Id="ascii" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>ascii</Item>
+               <Item>'IlluminationConstants.asciiSingleTenTen'</Item>
+               <Item>Ascii</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#backslashString">
+            <Messages>
+             <Message Id="backslash" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>backslash</Item>
+               <Item>'IlluminationConstants.backslashString'</Item>
+               <Item>Backslash</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#charNewLine">
+            <Messages>
+             <Message Id="char" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>char</Item>
+               <Item>'IlluminationConstants.charNewLine'</Item>
+               <Item>Char</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#commentErrorLine">
+            <Messages>
+             <Message Id="comment" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>comment</Item>
+               <Item>'IlluminationConstants.commentErrorLine'</Item>
+               <Item>Comment</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#endCommentPHP">
+            <Messages>
+             <Message Id="PHP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>PHP</Item>
+               <Item>'IlluminationConstants.endCommentPHP'</Item>
+               <Item>Php</Item>
+              </Issue>
+             </Message>
+             <Message Id="end" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>end</Item>
+               <Item>'IlluminationConstants.endCommentPHP'</Item>
+               <Item>End</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#endCondition">
+            <Messages>
+             <Message Id="end" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>end</Item>
+               <Item>'IlluminationConstants.endCondition'</Item>
+               <Item>End</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#endExecute">
+            <Messages>
+             <Message Id="end" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>end</Item>
+               <Item>'IlluminationConstants.endExecute'</Item>
+               <Item>End</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#endPhp">
+            <Messages>
+             <Message Id="end" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>end</Item>
+               <Item>'IlluminationConstants.endPhp'</Item>
+               <Item>End</Item>
+              </Issue>
+             </Message>
+             <Message Id="Php" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Php</Item>
+               <Item>'IlluminationConstants.endPhp'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#endScript">
+            <Messages>
+             <Message Id="end" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>end</Item>
+               <Item>'IlluminationConstants.endScript'</Item>
+               <Item>End</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#newLineScript">
+            <Messages>
+             <Message Id="new" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>new</Item>
+               <Item>'IlluminationConstants.newLineScript'</Item>
+               <Item>New</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#sigleString">
+            <Messages>
+             <Message Id="sigle" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>sigle</Item>
+               <Item>'IlluminationConstants.sigleString'</Item>
+               <Item>Sigle</Item>
+              </Issue>
+             </Message>
+             <Message Id="sigle" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>sigle</Item>
+               <Item>'IlluminationConstants.sigleString'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startCommentLineJava">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startCommentLineJava'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startCommentLinePHP">
+            <Messages>
+             <Message Id="PHP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>PHP</Item>
+               <Item>'IlluminationConstants.startCommentLinePHP'</Item>
+               <Item>Php</Item>
+              </Issue>
+             </Message>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startCommentLinePHP'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startCommentPHP">
+            <Messages>
+             <Message Id="PHP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>PHP</Item>
+               <Item>'IlluminationConstants.startCommentPHP'</Item>
+               <Item>Php</Item>
+              </Issue>
+             </Message>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startCommentPHP'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startCondition">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startCondition'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startElse">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startElse'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startExecute">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startExecute'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startFor">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startFor'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startIf">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startIf'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startPhp">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startPhp'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+             <Message Id="Php" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Php</Item>
+               <Item>'IlluminationConstants.startPhp'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startPhpMissing">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startPhpMissing'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+             <Message Id="Php" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Php</Item>
+               <Item>'IlluminationConstants.startPhpMissing'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startScript">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startScript'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startSwitch">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startSwitch'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#startWhile">
+            <Messages>
+             <Message Id="start" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>start</Item>
+               <Item>'IlluminationConstants.startWhile'</Item>
+               <Item>Start</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strBreak">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strBreak'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strBreak'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strChoose">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strChoose'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strChoose'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strEndCommentXml">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strEndCommentXml'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strEndCommentXml'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strEndTag">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strEndTag'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strEndTag'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strMultiple">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strMultiple'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strMultiple'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strPoint">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strPoint'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strPoint'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strStartCommentXml">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strStartCommentXml'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strStartCommentXml'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strStartTag">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strStartTag'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strStartTag'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#strSub">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strSub'</Item>
+               <Item>Str</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>str</Item>
+               <Item>'IlluminationConstants.strSub'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="IlluminationTools.Encrypt">
+        <Types>
+         <Type Name="IEncodePHP">
+          <Messages>
+           <Message Id="PHP" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+            <Issue Name="Type">
+             <Item>PHP</Item>
+             <Item>'IEncodePHP'</Item>
+             <Item>Php</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.IO.StreamWriter)">
+            <Messages>
+             <Message Id="prm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Excluded" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'IEncodePHP.IEncodePHP(StreamWriter)'</Item>
+               <Item>prm</Item>
+               <Item>'prmWriteLog'</Item>
+              </Issue>
+              <Notes>
+               <User Name="quangsan">
+                <Note Id="1" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AddCharToArr(System.Collections.ArrayList,System.Char)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.AddCharToArr(ArrayList, char)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.AddCharToArr(ArrayList, char)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#AddCharToArr(System.Collections.ArrayList,System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.AddCharToArr(ArrayList, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CheckToAddBreak(System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.CheckToAddBreak(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.CheckToAddBreak(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ConvertToString(System.Collections.ArrayList)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.ConvertToString(ArrayList)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CreateFolder(System.String,System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.CreateFolder(string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.CreateFolder(string, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CreateNewArr()">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.CreateNewArr()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#encodeFile(System.IO.StreamReader,System.IO.StreamWriter)">
+            <Messages>
+             <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'object'</Item>
+              </Issue>
+             </Message>
+             <Message Id="beforeLine" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'beforeLine'</Item>
+               <Item>'string'</Item>
+              </Issue>
+             </Message>
+             <Message Id="currenChar" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'currenChar'</Item>
+               <Item>'string'</Item>
+              </Issue>
+             </Message>
+             <Message Id="strEncode" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'strEncode'</Item>
+               <Item>'string'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Created="2008-12-08 08:37:45Z">
+              <Issue Name="IsNullOrEmpty">
+               <Item>'string.Equals(string)'</Item>
+               <Item>'IEncodePHP.encodeFile(StreamReader, StreamWriter)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#EncodePHP(System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.EncodePHP(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetExtOfFile(System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.GetExtOfFile(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Created="2008-12-08 08:37:45Z">
+              <Issue Name="IsNullOrEmpty">
+               <Item>'string.Equals(string)'</Item>
+               <Item>'IEncodePHP.GetExtOfFile(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetFileInDirectory(System.String,System.Int32,System.String)">
+            <Messages>
+             <Message Id="level+1" TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>level+1</Item>
+               <Item>'IEncodePHP.GetFileInDirectory(string, int, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="createTimeFile" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.GetFileInDirectory(string, int, string)'</Item>
+               <Item>'createTimeFile'</Item>
+               <Item>'DateTime'</Item>
+              </Issue>
+             </Message>
+             <Message Id="fileAttributes" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.GetFileInDirectory(string, int, string)'</Item>
+               <Item>'fileAttributes'</Item>
+               <Item>'FileAttributes'</Item>
+              </Issue>
+             </Message>
+             <Message Id="folderAttributes" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.GetFileInDirectory(string, int, string)'</Item>
+               <Item>'folderAttributes'</Item>
+               <Item>'FileAttributes'</Item>
+              </Issue>
+             </Message>
+             <Message Id="lengthOfFile" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.GetFileInDirectory(string, int, string)'</Item>
+               <Item>'lengthOfFile'</Item>
+               <Item>'long'</Item>
+              </Issue>
+             </Message>
+             <Message Id="totalFile" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.GetFileInDirectory(string, int, string)'</Item>
+               <Item>'totalFile'</Item>
+               <Item>'int'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetFinalChar(System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.GetFinalChar(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.GetFinalChar(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Created="2008-12-08 08:37:45Z">
+              <Issue Name="IsNullOrEmpty">
+               <Item>'string.operator !=(string, string)'</Item>
+               <Item>'IEncodePHP.GetFinalChar(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetFirstChar(System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.GetFirstChar(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.GetFirstChar(string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820" Created="2008-12-08 08:37:45Z">
+              <Issue Name="IsNullOrEmpty">
+               <Item>'string.operator !=(string, string)'</Item>
+               <Item>'IEncodePHP.GetFirstChar(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetStringToCheck(System.Char[],System.Int32,System.Int32)">
+            <Messages>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.GetStringToCheck(char[], int, int)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsAllowEncode(System.String[],System.String)">
+            <Messages>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.IsAllowEncode(string[], string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.IsAllowEncode(string[], string)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.IsAllowEncode(string[], string)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IsContant(System.String,System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.IsContant(string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'IEncodePHP.IsContant(string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.IsContant(string, string)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.IsContant(string, string)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Split(System.String,System.String)">
+            <Messages>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'IEncodePHP.Split(string, string)'</Item>
+               <Item>str</Item>
+               <Item>'strSource'</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.String.ToLower" TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'string.ToLower()'</Item>
+               <Item>'IEncodePHP.Split(string, string)'</Item>
+               <Item>'string.ToLower(CultureInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#writeLog">
+            <Messages>
+             <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'IEncodePHP.writeLog'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SymmCrypto">
+          <Messages>
+           <Message Id="Symm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+            <Issue Name="Type">
+             <Item>Symm</Item>
+             <Item>'SymmCrypto'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Created="2008-12-08 08:37:45Z" FixCategory="DependsOnFix">
+            <Issue Name="DependsOnFix">
+             <Item>'SymmCrypto'</Item>
+             <Item>'TripleDESCryptoServiceProvider', 'DESCryptoServiceProvider', 'RC2CryptoServiceProvider', 'RijndaelManaged'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(IlluminationTools.Encrypt.SymmCrypto+SymmProvEnum)">
+            <Messages>
+             <Message Id="Net" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.SymmCrypto(SymmCrypto.SymmProvEnum)'</Item>
+               <Item>Net</Item>
+               <Item>'NetSelected'</Item>
+               <Item>net</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#.ctor(System.Security.Cryptography.SymmetricAlgorithm)">
+            <Messages>
+             <Message Id="Service" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.SymmCrypto(SymmetricAlgorithm)'</Item>
+               <Item>Service</Item>
+               <Item>'ServiceProvider'</Item>
+               <Item>service</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Decrypt(System.String,System.String)">
+            <Messages>
+             <Message TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'SymmCrypto.Decrypt(string, string)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-12-08 08:37:45Z">
+              <Issue Name="TooGeneric">
+               <Item>'SymmCrypto.Decrypt(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'SymmCrypto.Decrypt(string, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Decrypt64(System.String)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-12-08 08:37:45Z">
+              <Issue Name="TooGeneric">
+               <Item>'SymmCrypto.Decrypt64(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.Decrypt64(string)'</Item>
+               <Item>str</Item>
+               <Item>'strToDecrypt'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'SymmCrypto.Decrypt64(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Decrypting(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-12-08 08:37:45Z">
+              <Issue Name="TooGeneric">
+               <Item>'SymmCrypto.Decrypting(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Key" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.Decrypting(string, string)'</Item>
+               <Item>Key</Item>
+               <Item>'Key'</Item>
+               <Item>key</Item>
+              </Issue>
+             </Message>
+             <Message Id="Source" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.Decrypting(string, string)'</Item>
+               <Item>Source</Item>
+               <Item>'Source'</Item>
+               <Item>source</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Encrypt(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-12-08 08:37:45Z">
+              <Issue Name="TooGeneric">
+               <Item>'SymmCrypto.Encrypt(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="NonBreaking">
+              <Issue>
+               <Item>'SymmCrypto.Encrypt(string, string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Encrypt64(System.String)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-12-08 08:37:45Z">
+              <Issue Name="TooGeneric">
+               <Item>'SymmCrypto.Encrypt64(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="str" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.Encrypt64(string)'</Item>
+               <Item>str</Item>
+               <Item>'strToEncrypt'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Created="2008-12-08 08:37:45Z" FixCategory="DependsOnFix">
+              <Issue>
+               <Item>'SymmCrypto.Encrypt64(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Encrypting(System.String,System.String)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-12-08 08:37:45Z">
+              <Issue Name="TooGeneric">
+               <Item>'SymmCrypto.Encrypting(string, string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Key" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.Encrypting(string, string)'</Item>
+               <Item>Key</Item>
+               <Item>'Key'</Item>
+               <Item>key</Item>
+              </Issue>
+             </Message>
+             <Message Id="Source" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'SymmCrypto.Encrypting(string, string)'</Item>
+               <Item>Source</Item>
+               <Item>'Source'</Item>
+               <Item>source</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetLegalKey(System.String)">
+            <Messages>
+             <Message TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201" Created="2008-12-08 08:37:45Z">
+              <Issue Name="TooGeneric">
+               <Item>'SymmCrypto.GetLegalKey(string)'</Item>
+               <Item>'Exception'</Item>
+              </Issue>
+             </Message>
+             <Message Id="lessSize" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'SymmCrypto.GetLegalKey(string)'</Item>
+               <Item>'lessSize'</Item>
+               <Item>'int'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="SymmCrypto+SymmProvEnum">
+          <Messages>
+           <Message Id="Prov" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+            <Issue Name="Type">
+             <Item>Prov</Item>
+             <Item>'SymmCrypto.SymmProvEnum'</Item>
+            </Issue>
+           </Message>
+           <Message Id="Symm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+            <Issue Name="Type">
+             <Item>Symm</Item>
+             <Item>'SymmCrypto.SymmProvEnum'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Created="2008-12-08 08:37:45Z">
+            <Issue Name="TypeNoAlternate">
+             <Item>'SymmCrypto.SymmProvEnum'</Item>
+             <Item>Enum</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Created="2008-12-08 08:37:45Z">
+            <Issue>
+             <Item>'SymmCrypto.SymmProvEnum'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#DES">
+            <Messages>
+             <Message Id="DES" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>DES</Item>
+               <Item>'SymmCrypto.SymmProvEnum.DES'</Item>
+               <Item>Des</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#TRIPLEDES">
+            <Messages>
+             <Message Id="TRIPLEDES" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>TRIPLEDES</Item>
+               <Item>'SymmCrypto.SymmProvEnum.TRIPLEDES'</Item>
+               <Item>Tripledes</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="IlluminationTools.FolderBrowser">
+        <Types>
+         <Type Name="BrowseFlags">
+          <Messages>
+           <Message Id="Flags" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-12-08 08:37:45Z">
+            <Issue Name="TypeNoAlternate">
+             <Item>Flags</Item>
+             <Item>'BrowseFlags'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#BrowseIncludeURLs">
+            <Messages>
+             <Message Id="URLs" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>URLs</Item>
+               <Item>'BrowseFlags.BrowseIncludeURLs'</Item>
+               <Item>Urls</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#DontGoBelowDomain">
+            <Messages>
+             <Message Id="Dont" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Dont</Item>
+               <Item>'BrowseFlags.DontGoBelowDomain'</Item>
+               <Item>DoNot</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ReturnFSancestors">
+            <Messages>
+             <Message Id="Sancestors" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Sancestors</Item>
+               <Item>'BrowseFlags.ReturnFSancestors'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ReturnOnlyFSDirs">
+            <Messages>
+             <Message Id="Dirs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Dirs</Item>
+               <Item>'BrowseFlags.ReturnOnlyFSDirs'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FolderSelChangedEventArgs">
+          <Messages>
+           <Message Id="Sel" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+            <Issue Name="Type">
+             <Item>Sel</Item>
+             <Item>'FolderSelChangedEventArgs'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2008-12-08 08:37:45Z">
+            <Issue Name="ProvideDisposeBool">
+             <Item>'FolderSelChangedEventArgs'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#CurSelFolderPath">
+            <Messages>
+             <Message Id="Sel" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Sel</Item>
+               <Item>'FolderSelChangedEventArgs.CurSelFolderPath'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#CurSelFolderPidl">
+            <Messages>
+             <Message Id="Pidl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Pidl</Item>
+               <Item>'FolderSelChangedEventArgs.CurSelFolderPidl'</Item>
+              </Issue>
+             </Message>
+             <Message Id="Sel" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Sel</Item>
+               <Item>'FolderSelChangedEventArgs.CurSelFolderPidl'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#Dispose()">
+            <Messages>
+             <Message TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816" Created="2008-12-08 08:37:45Z">
+              <Issue Name="NotCalled">
+               <Item>'FolderSelChangedEventArgs.Dispose()'</Item>
+               <Item>'GC.SuppressFinalize(object)'</Item>
+              </Issue>
+             </Message>
+             <Message TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063" Created="2008-12-08 08:37:45Z">
+              <Issue Name="DisposeImplementation">
+               <Item>'FolderSelChangedEventArgs.Dispose()'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="FolderSelChangedEventHandler">
+          <Messages>
+           <Message Id="Sel" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+            <Issue Name="Type">
+             <Item>Sel</Item>
+             <Item>'FolderSelChangedEventHandler'</Item>
+            </Issue>
+           </Message>
+           <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Created="2008-12-08 08:37:45Z">
+            <Issue>
+             <Item>'FolderSelChangedEventHandler'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="IUnknownObtainedEventHandler">
+          <Messages>
+           <Message TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003" Created="2008-12-08 08:37:45Z">
+            <Issue>
+             <Item>'IUnknownObtainedEventHandler'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+         </Type>
+         <Type Name="ShellFolderBrowser">
+          <Members>
+           <Member Name="#BrowseFlags">
+            <Messages>
+             <Message Id="Flags" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberNoAlternate">
+               <Item>Flags</Item>
+               <Item>'ShellFolderBrowser.BrowseFlags'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#EnableOkButton(System.Boolean)">
+            <Messages>
+             <Message Id="b" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'ShellFolderBrowser.EnableOkButton(bool)'</Item>
+               <Item>b</Item>
+               <Item>'bEnable'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SetExpanded(System.String)">
+            <Messages>
+             <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'ShellFolderBrowser.SetExpanded(string)'</Item>
+               <Item>'Marshal.FreeHGlobal(IntPtr)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetExpanded(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetExpanded(string)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'ShellFolderBrowser.SetExpanded(string)'</Item>
+               <Item>'Marshal.StringToHGlobalUni(string)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetExpanded(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetExpanded(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SetOkButtonText(System.String)">
+            <Messages>
+             <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'ShellFolderBrowser.SetOkButtonText(string)'</Item>
+               <Item>'Marshal.FreeHGlobal(IntPtr)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetOkButtonText(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetOkButtonText(string)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'ShellFolderBrowser.SetOkButtonText(string)'</Item>
+               <Item>'Marshal.StringToHGlobalUni(string)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetOkButtonText(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetOkButtonText(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SetSelection(System.String)">
+            <Messages>
+             <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'ShellFolderBrowser.SetSelection(string)'</Item>
+               <Item>'Marshal.FreeHGlobal(IntPtr)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetSelection(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetSelection(string)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'ShellFolderBrowser.SetSelection(string)'</Item>
+               <Item>'Marshal.StringToHGlobalAuto(string)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetSelection(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetSelection(string)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="newsel" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'ShellFolderBrowser.SetSelection(string)'</Item>
+               <Item>newsel</Item>
+               <Item>'newsel'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SetStatusText(System.String)">
+            <Messages>
+             <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'ShellFolderBrowser.SetStatusText(string)'</Item>
+               <Item>'Marshal.FreeHGlobal(IntPtr)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetStatusText(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetStatusText(string)'</Item>
+              </Issue>
+              <Issue>
+               <Item>'ShellFolderBrowser.SetStatusText(string)'</Item>
+               <Item>'Marshal.StringToHGlobalAuto(string)'</Item>
+               <Item>&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetStatusText(string)'&#xD;&#xA;   -&gt;'ShellFolderBrowser.SetStatusText(string)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#IUnknownObtained" Kind="Event">
+            <Messages>
+             <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Second">
+               <Item>'IUnknownObtainedEventHandler'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SelChanged" Kind="Event">
+            <Messages>
+             <Message Id="Sel" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Member">
+               <Item>Sel</Item>
+               <Item>'ShellFolderBrowser.SelChanged'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#ValidateFailed" Kind="Event">
+            <Messages>
+             <Message TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Second">
+               <Item>'ValidateFailedEventHandler'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="UnManagedMethods">
+          <Messages>
+           <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Created="2008-12-08 08:37:45Z">
+            <Issue>
+             <Item>'UnManagedMethods'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+            <Messages>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'UnManagedMethods.SendMessage(IntPtr, int, IntPtr, IntPtr)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SHBrowseForFolder(IlluminationTools.FolderBrowser.BrowseInfo&amp;)">
+            <Messages>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'UnManagedMethods.SHBrowseForFolder(ref BrowseInfo)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SHGetMalloc(System.Object&amp;)">
+            <Messages>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'UnManagedMethods.SHGetMalloc(out object)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#SHGetPathFromIDList(System.IntPtr,System.Text.StringBuilder)">
+            <Messages>
+             <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'UnManagedMethods.SHGetPathFromIDList(IntPtr, StringBuilder)'</Item>
+              </Issue>
+             </Message>
+             <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Created="2008-12-08 08:37:45Z">
+              <Issue Name="Parameter">
+               <Item>'pszPath'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="ValidateFailedEventArgs">
+          <Messages>
+           <Message TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711" Created="2008-12-08 08:37:45Z">
+            <Issue Name="TypeNoAlternate">
+             <Item>'ValidateFailedEventArgs'</Item>
+             <Item>EventArgs</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#.ctor(System.String)">
+            <Messages>
+             <Message TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805" Status="Excluded" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'ValidateFailedEventArgs.ValidateFailedEventArgs(string)'</Item>
+               <Item>'ValidateFailedEventArgs.dismissDialog'</Item>
+               <Item>'bool'</Item>
+               <Item>false</Item>
+              </Issue>
+              <Notes>
+               <User Name="quangsan">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+       <Namespace Name="IlluminationTools.Random">
+        <Types>
+         <Type Name="IRandom">
+          <Messages>
+           <Message TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053" Created="2008-12-08 08:37:45Z">
+            <Issue>
+             <Item>'IRandom'</Item>
+            </Issue>
+           </Message>
+          </Messages>
+          <Members>
+           <Member Name="#GetRandomChar(System.Boolean,System.Boolean)">
+            <Messages>
+             <Message Id="Include" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'IRandom.GetRandomChar(bool, bool)'</Item>
+               <Item>Include</Item>
+               <Item>'IncludeNumbers'</Item>
+               <Item>include</Item>
+              </Issue>
+              <Issue Name="MemberParameter">
+               <Item>'IRandom.GetRandomChar(bool, bool)'</Item>
+               <Item>Include</Item>
+               <Item>'IncludeSpecialCharacters'</Item>
+               <Item>include</Item>
+              </Issue>
+             </Message>
+             <Message Id="System.Convert.ToChar(System.String)" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Created="2008-12-08 08:37:45Z">
+              <Issue>
+               <Item>'Convert.ToChar(string)'</Item>
+               <Item>'IRandom.GetRandomChar(bool, bool)'</Item>
+               <Item>'Convert.ToChar(string, IFormatProvider)'</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="#GetRandomString(System.Int32,System.Boolean,System.Boolean)">
+            <Messages>
+             <Message Id="Include" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'IRandom.GetRandomString(int, bool, bool)'</Item>
+               <Item>Include</Item>
+               <Item>'IncludeNumbers'</Item>
+               <Item>include</Item>
+              </Issue>
+              <Issue Name="MemberParameter">
+               <Item>'IRandom.GetRandomString(int, bool, bool)'</Item>
+               <Item>Include</Item>
+               <Item>'IncludeSpecialCharacters'</Item>
+               <Item>include</Item>
+              </Issue>
+             </Message>
+             <Message Id="Length" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Created="2008-12-08 08:37:45Z">
+              <Issue Name="MemberParameter">
+               <Item>'IRandom.GetRandomString(int, bool, bool)'</Item>
+               <Item>Length</Item>
+               <Item>'Length'</Item>
+               <Item>length</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="quangsan">
+    <Note Id="0" Modified="2008-12-08 08:40:27Z">Yes</Note>
+    <Note Id="1" Modified="2008-12-08 08:41:42Z">prmWriteLog</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign {0} with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUncalledPrivateCode" Category="Microsoft.Performance" CheckId="CA1811">
+    <Resolution Name="Default">{0} appears to have no upstream public or protected callers.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+    <Resolution Name="Default">{0} is an internal class that is apparently never instantiated. If so, remove the code from the assembly. If this class is intended to contain only static methods, consider adding a private constructor to prevent the compiler from generating a default constructor.</Resolution>
+   </Rule>
+   <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+    <Resolution Name="Default">It appears that field {0} is never used or is only ever assigned to. Use this field or remove it.</Resolution>
+   </Rule>
+   <Rule TypeName="CallGCSuppressFinalizeCorrectly" Category="Microsoft.Usage" CheckId="CA1816">
+    <Resolution Name="NotCalled">Change {0} to call {1}. This will prevent unnecessary finalization of the object once it has been disposed and it has fallen out of scope.</Resolution>
+   </Rule>
+   <Rule TypeName="DeclareEventHandlersCorrectly" Category="Microsoft.Design" CheckId="CA1009">
+    <Resolution Name="Second">Declare the second parameter of {0} as an EventArgs, or an instance of a type that extends EventArgs, named 'e'.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+    <Resolution Name="Default">Modify {0} to catch a more specific exception than {1} or rethrow the exception.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+    <Resolution Name="Default">{0} calls into {1} which has a LinkDemand. By making this call, {1} is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: {2}</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotInitializeUnnecessarily" Category="Microsoft.Performance" CheckId="CA1805">
+    <Resolution Name="Default">{0} initializes field {1} of type {2} to {3}. Remove this initialization because it will be done automatically by the runtime.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotRaiseReservedExceptionTypes" Category="Microsoft.Usage" CheckId="CA2201">
+    <Resolution Name="TooGeneric">{0} creates an exception of type {1}, an exception type that is not sufficiently specific and should never be raised by user code. If this exception instance might be thrown, use a different exception type.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+    <Resolution Name="Member">Correct the casing of '{0}' in member name {1} by changing it to '{2}'.</Resolution>
+    <Resolution Name="MemberParameter">In member {0}, correct the casing of '{1}' in parameter name {2} by changing it to '{3}'.</Resolution>
+    <Resolution Name="Type">Correct the casing of '{0}' in type name {1} by changing it to '{2}'.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+    <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+    <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotHaveIncorrectSuffix" Category="Microsoft.Naming" CheckId="CA1711">
+    <Resolution Name="TypeNoAlternate">Rename type name {0} so that it does not end in '{1}'.</Resolution>
+   </Rule>
+   <Rule TypeName="ImplementIDisposableCorrectly" Category="Microsoft.Design" CheckId="CA1063">
+    <Resolution Name="DisposeImplementation">Modify {0} so that it calls Dispose(true), then calls GC.SuppressFinalize on the current object instance ('this' or 'Me' in Visual Basic), and then returns.</Resolution>
+    <Resolution Name="ProvideDisposeBool">Provide an overridable implementation of Dispose(bool) on {0} or mark the type as sealed. A call to Dispose(false) should only clean up native resources. A call to Dispose(true) should clean up both managed and native resources.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+    <Resolution Name="Default">Mark {0} with CLSCompliant(true) because it exposes externally visible types.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkAssembliesWithNeutralResourcesLanguage" Category="Microsoft.Performance" CheckId="CA1824">
+    <Resolution Name="Default">Because assembly {0} contains a ResX-based resource file, mark it with the NeutralResourcesLanguage attribute, specifying the language of the resources within the assembly. This could improve lookup performance the first time a resource is retrieved.</Resolution>
+   </Rule>
+   <Rule TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822">
+    <Resolution Name="Default">The 'this' parameter (or 'Me' in Visual Basic) of {0} is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Resolution>
+   </Rule>
+   <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+    <Resolution Name="Default">Because it is a P/Invoke method, {0} should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Resolution>
+   </Rule>
+   <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+    <Resolution Name="Default">Do not nest type {0}. Alternatively, change its accessibility so that it is not externally visible.</Resolution>
+   </Rule>
+   <Rule TypeName="OperationsShouldNotOverflow" Category="Microsoft.Usage" CheckId="CA2233">
+    <Resolution Name="Default">Correct the potential overflow in the operation '{0}' in {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804">
+    <Resolution Name="Default">{0} declares a variable, {1}, of type {2}, which is never used or is only assigned to. Use this variable or remove it.</Resolution>
+   </Rule>
+   <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+    <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyCultureInfo" Category="Microsoft.Globalization" CheckId="CA1304">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'CultureInfo' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+    <Resolution Name="Default">Because the behavior of {0} could vary based on the current user's locale settings, replace this call in {1} with a call to {2}. If the result of {2} will be displayed to the user, specify 'CultureInfo.CurrentCulture' as the 'IFormatProvider' parameter. Otherwise, if the result will be stored and accessed by software, such as when it is persisted to disk or to a database, specify 'CultureInfo.InvariantCulture'.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+    <Resolution Name="Parameter">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   </Rule>
+   <Rule TypeName="SpecifyMessageBoxOptions" Category="Microsoft.Globalization" CheckId="CA1300">
+    <Resolution Name="Default">Change {0} to call the MessageBox.Show overload that specifies MessageBoxOptions, and make sure to set MessageBoxOptions.RightAlign and MessageBoxOptions.RtlReading if RightToLeft is set to RightToLeft.Yes on the parent control.</Resolution>
+   </Rule>
+   <Rule TypeName="StaticHolderTypesShouldNotHaveConstructors" Category="Microsoft.Design" CheckId="CA1053">
+    <Resolution Name="Default">Remove the public constructors from {0}.</Resolution>
+   </Rule>
+   <Rule TypeName="TestForEmptyStringsUsingStringLength" Category="Microsoft.Performance" CheckId="CA1820">
+    <Resolution Name="IsNullOrEmpty">Replace the call to {0} in {1} with a call to 'String.IsNullOrEmpty'.</Resolution>
+   </Rule>
+   <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+    <Resolution Name="DependsOnFix">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}. If {0} has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Resolution>
+   </Rule>
+   <Rule TypeName="UseGenericEventHandlerInstances" Category="Microsoft.Design" CheckId="CA1003">
+    <Resolution Name="Default">Remove {0} and replace its usage with EventHandler&lt;T&gt;</Resolution>
+   </Rule>
+   <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+    <Resolution Name="Member">Replace the term '{0}' in member name {1} with the preferred alternate '{2}'.</Resolution>
+    <Resolution Name="MemberNoAlternate">Replace the term '{0}' in member name {1} with an appropriate alternate or remove it entirely.</Resolution>
+    <Resolution Name="TypeNoAlternate">Replace the term '{0}' in type name {1} with an appropriate alternate or remove it entirely.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>
